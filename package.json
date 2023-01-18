@@ -1,0 +1,48 @@
+{
+  "name": "glyph-segregator",
+  "version": "0.0.1",
+  "description": "A new way to optimize web fonts for a specific site.",
+  "repository": "https://github.com/ouuan/glyph-segregator",
+  "author": "Yufan You",
+  "license": "Apache-2.0",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest",
+    "lint": "eslint . --ext .js,.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "release": "bumpp package.json --no-commit --no-push --no-tag && git commit -av && git push && pnpm publish"
+  },
+  "dependencies": {
+    "consola": "^2.15.3",
+    "jsdom": "^21.0.0",
+    "puppeteer": "^19.5.2",
+    "puppeteer-cluster": "^0.23.0",
+    "subset-font": "^2.0.0",
+    "zod": "^3.20.2"
+  },
+  "devDependencies": {
+    "@ouuan/eslint-config-ts": "^1.1.1",
+    "@types/jsdom": "^20.0.1",
+    "@types/subset-font": "^1.4.0",
+    "bumpp": "^8.2.1",
+    "csstype": "^3.1.1",
+    "eslint": "^8.32.0",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4",
+    "vitest": "^0.27.2"
+  }
+}
