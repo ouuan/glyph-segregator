@@ -24,17 +24,10 @@ export async function glyphSegregator(config: Config): Promise<void> {
   }
 
   const pagesWithFonts = await getPagesFontInfo(config.pages, config.concurrency ?? 4);
-  // console.log(JSON.stringify(pagesWithFonts, (key, value) => {
-  //   if (key === 'texts') return value.join();
-  //   return value;
-  // }, 1));
 
   consola.start('Dividing font glyphs');
 
   const pagesWithGlyphs = matchFonts(pagesWithFonts, config.fonts);
-  // console.log(JSON.stringify(pagesWithGlyphs, (key, value) => {
-  //   return value;
-  // }, 1));
 
   const fontsWithCommonGlyphs = getCommonGlyphs(pagesWithGlyphs, config.fonts, commonGlyphsCache);
 
