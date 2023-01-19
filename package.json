@@ -24,7 +24,7 @@
     "lint": "eslint . --ext .js,.ts",
     "typecheck": "tsc --noEmit",
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
-    "release": "bumpp package.json --no-commit --no-push --no-tag && git commit -av && git push && pnpm publish"
+    "release": "bumpp package.json --no-commit --no-push --no-tag && git commit -av && git push && pnpm build && pnpm publish"
   },
   "dependencies": {
     "consola": "^2.15.3",
