@@ -37,6 +37,7 @@
   "devDependencies": {
     "@ouuan/eslint-config-ts": "^1.1.1",
     "@types/jsdom": "^20.0.1",
+    "@types/node": "^18.11.18",
     "@types/subset-font": "^1.4.0",
     "bumpp": "^8.2.1",
     "csstype": "^3.1.1",
