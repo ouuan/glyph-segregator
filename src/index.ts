@@ -14,6 +14,8 @@ import generateFontFiles from './generateFontFiles';
 import injectCSS from './injectCSS';
 
 export async function glyphSegregator(config: Config): Promise<void> {
+  consola.start('glyph-segregator started');
+
   let commonGlyphsCache;
   if (config.useCache) {
     const cacheContent = await readFile(config.cachePath, 'utf-8');
