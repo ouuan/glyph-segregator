@@ -35,7 +35,7 @@ export async function glyphSegregator(config: Config): Promise<void> {
     (font) => font.variants.map((variant) => ({
       fontFamily: font.fontFamily,
       fontWeight: variant.fontWeight,
-      commonGlyphs: Array.from(variant.commonGlyphs).sort(),
+      commonGlyphs: Array.from(variant.commonGlyphs).sort((a, b) => a - b),
     })),
   );
   await writeFile(config.cachePath, JSON.stringify(newCache, null, 2));
