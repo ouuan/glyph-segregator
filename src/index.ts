@@ -43,7 +43,7 @@ export async function glyphSegregator(config: Config): Promise<void> {
       commonGlyphs: Array.from(variant.commonGlyphs),
     })),
   );
-  await writeFile(config.cachePath, JSON.stringify(newCache));
+  await writeFile(config.cachePath, JSON.stringify(newCache, null, 2));
 
   consola.success('Glyphs dividied');
 
