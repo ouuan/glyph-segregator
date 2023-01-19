@@ -113,18 +113,18 @@ export default async function generateFontFiles(
           }`);
         }
 
-        if (commonFontPath && uniqueGlyphs.length < usedGlyphs.length) {
-          addFontFace(
-            commonFontPath.woffPath,
-            commonFontPath.woff2Path,
-            Array.from(variant.commonGlyphs),
-          );
-        }
         if (uniqueFontPath) {
           addFontFace(
             uniqueFontPath.woffPath,
             uniqueFontPath.woff2Path,
             uniqueGlyphs,
+          );
+        }
+        if (commonFontPath && uniqueGlyphs.length < usedGlyphs.length) {
+          addFontFace(
+            commonFontPath.woffPath,
+            commonFontPath.woff2Path,
+            Array.from(variant.commonGlyphs),
           );
         }
       }));
