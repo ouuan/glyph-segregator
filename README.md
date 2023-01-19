@@ -2,6 +2,8 @@
 
 [![npm package](https://shields.ouuan.moe/npm/v/glyph-segregator)](https://www.npmjs.com/package/glyph-segregator)
 
+[中文介绍博客 (An introductory blog in Chinese)](https://ouuan.moe/post/2023/01/glyph-segregator)
+
 A new way to optimize web fonts for a specific static site:
 
 Divide all the glyphs (characters) in a font into two groups: commonly used glyphs and less commonly used glyphs. The decision is based on the estimated cost of putting a glyph in the less commonly used group, which is then based on the estimated probability that a visitor will access each page on the site. For the commonly used glyphs, a single font file will be shared across all pages. For the less commonly used glyphs, each page will have its own unique font file.
