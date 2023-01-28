@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@ouuan/eslint-config-ts': ^1.2.0
+  '@ouuan/tsconfig-base': ^0.3.0
   '@types/jsdom': ^20.0.1
   '@types/node': ^18.11.18
   '@types/subset-font': ^1.4.0
@@ -28,6 +29,7 @@ dependencies:
 
 devDependencies:
   '@ouuan/eslint-config-ts': 1.2.0_7uibuqfxkfaozanbtbziikiqje
+  '@ouuan/tsconfig-base': 0.3.0
   '@types/jsdom': 20.0.1
   '@types/node': 18.11.18
   '@types/subset-font': 1.4.0
@@ -363,9 +365,19 @@ packages:
       - supports-color
     dev: true
 
+  /@ouuan/tsconfig-base/0.3.0:
+    resolution: {integrity: sha512-SDOUUd766vPxoJfzYtWe+gs27u7bO9f7gD0ao0E7hURgQ6Kl69dmNdtzo9rMZizUV/mTO1ftifzuY7H0duryMA==}
+    dependencies:
+      '@tsconfig/node-lts-strictest-esm': 18.12.1
+    dev: true
+
   /@tootallnate/once/2.0.0:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
     engines: {node: '>= 10'}
+
+  /@tsconfig/node-lts-strictest-esm/18.12.1:
+    resolution: {integrity: sha512-LvBLmaC6Q/txTddLc11OeMHF9XjJFzlilkETJuvBlUvHy9pPiMsoH3nxWZM1FMSO53zp4mJP6gzOzxKEq0me7Q==}
+    dev: true
 
   /@types/chai-subset/1.3.3:
     resolution: {integrity: sha512-frBecisrNGz+F4T6bcc+NLeolfiojh5FxW2klu669+8BARtyQv2C/GkNW6FUodVe4BroGMP/wER/YDGc7rEllw==}
