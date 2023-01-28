@@ -7,10 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Get cache key
+        id: get-cache-key
+        run: echo "key=$(jq .dependencies.puppeteer package.json)" >> "$GITHUB_OUTPUT"
       - uses: actions/cache@v3
         with:
           path: /home/runner/.cache/puppeteer
-          key: ${{ runner.os }}-puppeteer
+          key: ${{ runner.os }}-puppeteer-${{ steps.get-cache-key.outputs.key }}
       - uses: pnpm/action-setup@v2
         with:
           version: 7
