@@ -1,6 +1,6 @@
 import { JSDOM } from 'jsdom';
 import { readFile, writeFile } from 'fs/promises';
-import { PageInfoWithCSS } from './types';
+import type { PageInfoWithCSS } from './types';
 
 export default async function injectCSS(pageWithCSSInfo: PageInfoWithCSS) {
   const html = await readFile(pageWithCSSInfo.filePath, 'utf-8');

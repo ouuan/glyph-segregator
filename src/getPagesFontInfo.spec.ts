@@ -6,7 +6,7 @@ import {
 } from 'vitest';
 import { fileURLToPath } from 'url';
 import { resolve } from 'path';
-import { PageFontInfoItem, PageInfoWithFontInfo } from './types';
+import type { PageFontInfoItem, PageInfoWithFontInfo } from './types';
 import getPagesFontInfo from './getPagesFontInfo';
 
 function generatePageInfo(name: string) {

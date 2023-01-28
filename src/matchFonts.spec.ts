@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 
 import matchFonts from './matchFonts';
-import { PageInfoWithGlyphInfo } from './types';
+import type { PageInfoWithGlyphInfo } from './types';
 
 describe('matchFonts', () => {
   it('should match by font family', () => {

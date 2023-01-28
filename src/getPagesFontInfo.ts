@@ -1,6 +1,6 @@
 import { Cluster } from 'puppeteer-cluster';
 import consola from 'consola';
-import { PageFontInfoItem, PageInfo, PageInfoWithFontInfo } from './types';
+import type { PageFontInfoItem, PageInfo, PageInfoWithFontInfo } from './types';
 
 function toBeEvaluated(): PageFontInfoItem[] {
   const map = new Map<string, Map<number, string[]>>();

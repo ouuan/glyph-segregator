@@ -5,7 +5,7 @@ import { createHash } from 'crypto';
 import { resolve } from 'path';
 import { mkdir, readFile, writeFile } from 'fs/promises';
 import subsetFont from 'subset-font';
-import {
+import type {
   FontInfoWithCommonGlyphs,
   PageInfoWithCSS,
   PageInfoWithGlyphInfo,
