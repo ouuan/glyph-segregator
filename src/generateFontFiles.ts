@@ -11,7 +11,7 @@ import type {
   PageInfoWithGlyphInfo,
 } from './types';
 
-const assetSet = new Set<string>();
+const fontHashMap = new Map<string, Promise<string[]>>();
 
 async function saveAsset(
   buffer: Buffer,
@@ -22,10 +22,7 @@ async function saveAsset(
 ) {
   const hash = createHash('sha256').update(buffer).digest('hex').slice(0, 8);
   const savePath = `${assetsPath}/${baseName}.${hash}.${suffix}`;
-  if (!assetSet.has(savePath)) {
-    assetSet.add(savePath);
-    await writeFile(resolve(rootPath, savePath), buffer);
-  }
+  await writeFile(resolve(rootPath, savePath), buffer);
   return savePath;
 }
 
@@ -39,14 +36,20 @@ async function generateFont(
   if (glyphs.length === 0) {
     return null;
   }
-  const [woffPath, woff2Path] = await Promise.all((['woff', 'woff2'] as const).map(async (format) => {
-    const generatedFont = (await subsetFont(
-      originalFont,
-      glyphs.map((glyph) => String.fromCodePoint(glyph)).join(''),
-      { targetFormat: format },
-    ));
-    return saveAsset(generatedFont, rootPath, assetsPath, baseName, format);
-  }));
+  const hash = createHash('sha256').update(new Uint16Array(glyphs.sort())).digest('hex');
+  let promise = fontHashMap.get(hash);
+  if (!promise) {
+    promise = Promise.all((['woff', 'woff2'] as const).map(async (format) => {
+      const generatedFont = await subsetFont(
+        originalFont,
+        glyphs.map((glyph) => String.fromCodePoint(glyph)).join(''),
+        { targetFormat: format },
+      );
+      return saveAsset(generatedFont, rootPath, assetsPath, baseName, format);
+    }));
+    fontHashMap.set(hash, promise);
+  }
+  const [woffPath, woff2Path] = await promise;
   return { woffPath, woff2Path } as const;
 }
 
