@@ -78,7 +78,8 @@ export interface Config {
   cachePath: string;
 
   /**
-   * set of glyphs that are always common if used in any page at least once
+   * set of glyphs that are always common even if not used in any page
+   *
    * It can be either a string containing the characters or an array of code points.
    *
    * This option can be used to avoid losing kerning information of glyph pairs
