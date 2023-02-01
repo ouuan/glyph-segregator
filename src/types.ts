@@ -80,6 +80,10 @@ export interface Config {
   /**
    * set of glyphs that are always common if used in any page at least once
    * It can be either a string containing the characters or an array of code points.
+   *
+   * This option can be used to avoid losing kerning information of glyph pairs
+   * that are divided into different subsets.
+   *
    * @default all ASCII characters
    */
   alwaysCommonGlyphs?: string | number[];
