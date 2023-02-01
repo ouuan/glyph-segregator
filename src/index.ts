@@ -29,7 +29,12 @@ export async function glyphSegregator(config: Config): Promise<void> {
 
   const pagesWithGlyphs = matchFonts(pagesWithFonts, config.fonts);
 
-  const fontsWithCommonGlyphs = getCommonGlyphs(pagesWithGlyphs, config.fonts, commonGlyphsCache);
+  const fontsWithCommonGlyphs = getCommonGlyphs(
+    pagesWithGlyphs,
+    config.fonts,
+    config.allAsciiCommon ?? true,
+    commonGlyphsCache,
+  );
 
   const newCache: CommonGlyphsCache = fontsWithCommonGlyphs.flatMap(
     (font) => font.variants.map((variant) => ({

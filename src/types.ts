@@ -78,6 +78,13 @@ export interface Config {
   cachePath: string;
 
   /**
+   * whether to set all ASCII glyphs as common glyphs
+   * Set this to avoid wrong kerning caused by glyphs in different subsets.
+   * @default true
+   */
+  allAsciiCommon?: boolean;
+
+  /**
    * number of browser (puppeteer) pages to use in parallel
    * @default 4
    */

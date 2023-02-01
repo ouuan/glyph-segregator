@@ -31,6 +31,7 @@ function getCommonGlyphsForVariant(
 export default function getCommonGlyphs(
   pagesWithGlyphs: PageInfoWithGlyphInfo[],
   fontInfo: FontInfo[],
+  allAsciiCommon: boolean,
   cache?: CommonGlyphsCache,
 ): FontInfoWithCommonGlyphs[] {
   return fontInfo.map((font, fontIndex) => ({
@@ -50,6 +51,11 @@ export default function getCommonGlyphs(
           fontIndex,
           variantIndex,
         );
+        if (allAsciiCommon) {
+          for (let i = 32; i <= 126; i += 1) {
+            commonGlyphs.add(i);
+          }
+        }
       }
       return {
         ...variant,
