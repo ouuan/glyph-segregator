@@ -9,6 +9,7 @@ function getCommonGlyphsForVariant(
   pagesWithGlyphs: PageInfoWithGlyphInfo[],
   fontIndex: number,
   variantIndex: number,
+  alwaysCommonGlyphSet: Set<number>,
 ) {
   const map = new Map<number, number>();
   pagesWithGlyphs.forEach((page) => {
@@ -20,7 +21,7 @@ function getCommonGlyphsForVariant(
   const commonGlyphs = new Set<number>();
 
   for (const [glyph, expectedCost] of map) {
-    if (expectedCost > 1) {
+    if (alwaysCommonGlyphSet.has(glyph) || expectedCost > 1) {
       commonGlyphs.add(glyph);
     }
   }
@@ -31,7 +32,7 @@ function getCommonGlyphsForVariant(
 export default function getCommonGlyphs(
   pagesWithGlyphs: PageInfoWithGlyphInfo[],
   fontInfo: FontInfo[],
-  allAsciiCommon: boolean,
+  alwaysCommonGlyphs?: string | number[],
   cache?: CommonGlyphsCache,
 ): FontInfoWithCommonGlyphs[] {
   return fontInfo.map((font, fontIndex) => ({
@@ -46,16 +47,24 @@ export default function getCommonGlyphs(
         if (cacheHit) commonGlyphs = new Set(cacheHit.commonGlyphs);
       }
       if (!commonGlyphs) {
+        const alwaysCommonGlyphSet = new Set<number>();
+        if (alwaysCommonGlyphs === undefined) {
+          for (let i = 32; i <= 126; i += 1) {
+            alwaysCommonGlyphSet.add(i);
+          }
+        } else if (typeof alwaysCommonGlyphs === 'string') {
+          for (let i = 0; i < alwaysCommonGlyphs.length; i += 1) {
+            alwaysCommonGlyphSet.add(alwaysCommonGlyphs.charCodeAt(i));
+          }
+        } else {
+          alwaysCommonGlyphs.forEach((glyph) => alwaysCommonGlyphSet.add(glyph));
+        }
         commonGlyphs = getCommonGlyphsForVariant(
           pagesWithGlyphs,
           fontIndex,
           variantIndex,
+          alwaysCommonGlyphSet,
         );
-        if (allAsciiCommon) {
-          for (let i = 32; i <= 126; i += 1) {
-            commonGlyphs.add(i);
-          }
-        }
       }
       return {
         ...variant,

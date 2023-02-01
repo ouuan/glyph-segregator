@@ -32,7 +32,7 @@ export async function glyphSegregator(config: Config): Promise<void> {
   const fontsWithCommonGlyphs = getCommonGlyphs(
     pagesWithGlyphs,
     config.fonts,
-    config.allAsciiCommon ?? true,
+    config.alwaysCommonGlyphs,
     commonGlyphsCache,
   );
 

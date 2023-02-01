@@ -78,11 +78,11 @@ export interface Config {
   cachePath: string;
 
   /**
-   * whether to set all ASCII glyphs as common glyphs
-   * Set this to avoid wrong kerning caused by glyphs in different subsets.
-   * @default true
+   * set of glyphs that are always common if used in any page at least once
+   * It can be either a string containing the characters or an array of code points.
+   * @default all ASCII characters
    */
-  allAsciiCommon?: boolean;
+  alwaysCommonGlyphs?: string | number[];
 
   /**
    * number of browser (puppeteer) pages to use in parallel
