@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@ouuan/eslint-config-ts': ^1.2.0
   '@ouuan/tsconfig-base': ^0.3.0
-  '@types/jsdom': ^20.0.1
+  '@types/jsdom': ^21.0.0
   '@types/node': ^18.11.18
   '@types/subset-font': ^1.4.0
   bumpp: ^8.2.1
@@ -30,7 +30,7 @@ dependencies:
 devDependencies:
   '@ouuan/eslint-config-ts': 1.2.0_7uibuqfxkfaozanbtbziikiqje
   '@ouuan/tsconfig-base': 0.3.0
-  '@types/jsdom': 20.0.1
+  '@types/jsdom': 21.1.0
   '@types/node': 18.11.18
   '@types/subset-font': 1.4.0
   bumpp: 8.2.1
@@ -389,8 +389,8 @@ packages:
     resolution: {integrity: sha512-KnRanxnpfpjUTqTCXslZSEdLfXExwgNxYPdiO2WGUj8+HDjFi8R3k5RVKPeSCzLjCcshCAtVO2QBbVuAV4kTnw==}
     dev: true
 
-  /@types/jsdom/20.0.1:
-    resolution: {integrity: sha512-d0r18sZPmMQr1eG35u12FZfhIXNrnsPU/g5wvRKCUf/tOGilKKwYMYGqh33BNR6ba+2gkHw1EUiHoN3mn7E5IQ==}
+  /@types/jsdom/21.1.0:
+    resolution: {integrity: sha512-leWreJOdnuIxq9Y70tBVm/bvTuh31DSlF/r4l7Cfi4uhVQqLHD0Q4v301GMisEMwwbMgF7ZKxuZ+Jbd4NcdmRw==}
     dependencies:
       '@types/node': 18.11.18
       '@types/tough-cookie': 4.0.2
