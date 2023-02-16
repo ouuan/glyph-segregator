@@ -62,6 +62,7 @@ export default async function generateFontFiles(
   const pagesWithCSS: PageInfoWithCSS[] = pagesWithGlyphs.map((page) => ({
     ...page,
     css: [],
+    preload: [],
   }));
   await mkdir(resolve(rootPath, assetsPath), { recursive: true });
   for (const [fontIndex, font] of fontsWithCommonGlyphs.entries()) {
@@ -114,6 +115,8 @@ export default async function generateFontFiles(
                  url('/${woffPath}') format('woff');
             unicode-range: U+0-${Math.max(...glyphs).toString(16)};
           }`);
+
+          page.preload.push(`<link rel="preload" href="/${woff2Path}" as="font" type="font/woff2" crossorigin>`);
         }
 
         if (uniqueFontPath) {

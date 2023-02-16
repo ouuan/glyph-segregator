@@ -55,7 +55,7 @@ export async function glyphSegregator(config: Config): Promise<void> {
   );
 
   consola.start('Inject CSS into HTML files');
-  await Promise.all(pagesWithCSS.map(injectCSS));
+  await Promise.all(pagesWithCSS.map((page) => injectCSS(page, config.preload ?? true)));
 
   consola.success('glyph-segregator finished!');
 }

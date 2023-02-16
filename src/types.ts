@@ -94,6 +94,12 @@ export interface Config {
    * @default 4
    */
   concurrency?: number;
+
+  /**
+   * whether to preload the font files
+   * @default true
+   */
+  preload?: boolean;
 }
 
 export interface PageFontInfoItem {
@@ -128,4 +134,5 @@ export type CommonGlyphsCache = z.infer<typeof CommonGlyphsCacheSchema>;
 
 export interface PageInfoWithCSS extends PageInfoWithGlyphInfo {
   css: string[];
+  preload: string[];
 }
