@@ -27,7 +27,7 @@
     "release": "bumpp package.json --no-commit --no-push --no-tag && git commit -av && git push && pnpm build && pnpm publish"
   },
   "dependencies": {
-    "consola": "^2.15.3",
+    "consola": "^3.1.0",
     "jsdom": "^21.1.1",
     "puppeteer": "^19.10.1",
     "puppeteer-cluster": "^0.23.0",

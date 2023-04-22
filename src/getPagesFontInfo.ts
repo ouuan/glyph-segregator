@@ -1,5 +1,5 @@
 import { Cluster } from 'puppeteer-cluster';
-import consola from 'consola';
+import { consola } from 'consola';
 import type { PageFontInfoItem, PageInfo, PageInfoWithFontInfo } from './types';
 
 function toBeEvaluated(): PageFontInfoItem[] {

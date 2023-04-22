@@ -1,5 +1,5 @@
 import { readFile, writeFile } from 'fs/promises';
-import consola from 'consola';
+import { consola } from 'consola';
 import {
   CommonGlyphsCache,
   CommonGlyphsCacheSchema,

@@ -1,6 +1,6 @@
 /* eslint-disable no-await-in-loop */
 
-import consola from 'consola';
+import { consola } from 'consola';
 import { createHash } from 'crypto';
 import { resolve } from 'path';
 import { mkdir, readFile, writeFile } from 'fs/promises';
