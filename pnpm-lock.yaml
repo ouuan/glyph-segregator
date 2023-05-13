@@ -5,8 +5,8 @@ dependencies:
     specifier: ^3.1.0
     version: 3.1.0
   jsdom:
-    specifier: ^21.1.1
-    version: 21.1.1
+    specifier: ^21.1.2
+    version: 21.1.2
   puppeteer:
     specifier: ^19.10.1
     version: 19.10.1(typescript@4.9.5)
@@ -53,7 +53,7 @@ devDependencies:
     version: 4.9.5
   vitest:
     specifier: 0.31.0
-    version: 0.31.0(jsdom@21.1.1)
+    version: 0.31.0(jsdom@21.1.2)
 
 packages:
 
@@ -2323,8 +2323,8 @@ packages:
     dependencies:
       argparse: 2.0.1
 
-  /jsdom@21.1.1:
-    resolution: {integrity: sha512-Jjgdmw48RKcdAIQyUD1UdBh2ecH7VqwaXPN3ehoZN6MqgVbMn+lRm1aAT1AsdJRAJpwfa4IpwgzySn61h2qu3w==}
+  /jsdom@21.1.2:
+    resolution: {integrity: sha512-sCpFmK2jv+1sjff4u7fzft+pUh2KSUbUrEHYHyfSIbGTIcmnjyp83qg6qLwdJ/I3LpTXx33ACxeRL7Lsyc6lGQ==}
     engines: {node: '>=14'}
     peerDependencies:
       canvas: ^2.5.0
@@ -2345,7 +2345,7 @@ packages:
       http-proxy-agent: 5.0.0
       https-proxy-agent: 5.0.1
       is-potential-custom-element-name: 1.0.1
-      nwsapi: 2.2.2
+      nwsapi: 2.2.4
       parse5: 7.1.2
       rrweb-cssom: 0.6.0
       saxes: 6.0.0
@@ -2612,8 +2612,8 @@ packages:
       path-key: 3.1.1
     dev: true
 
-  /nwsapi@2.2.2:
-    resolution: {integrity: sha512-90yv+6538zuvUMnN+zCr8LuV6bPFdq50304114vJYJ8RDyK8D5O9Phpbd6SZWgI7PwzmmfN1upeOJlvybDSgCw==}
+  /nwsapi@2.2.4:
+    resolution: {integrity: sha512-NHj4rzRo0tQdijE9ZqAx6kYDcoRwYwSYzCA8MY3JzfxlrvEU0jhnhJT9BhqhJs7I/dKcrDm6TyulaRqZPIhN5g==}
 
   /object-assign@4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
@@ -3531,7 +3531,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest@0.31.0(jsdom@21.1.1):
+  /vitest@0.31.0(jsdom@21.1.2):
     resolution: {integrity: sha512-JwWJS9p3GU9GxkG7eBSmr4Q4x4bvVBSswaCFf1PBNHiPx00obfhHRJfgHcnI0ffn+NMlIh9QGvG75FlaIBdKGA==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -3576,7 +3576,7 @@ packages:
       chai: 4.3.7
       concordance: 5.0.4
       debug: 4.3.4
-      jsdom: 21.1.1
+      jsdom: 21.1.2
       local-pkg: 0.4.3
       magic-string: 0.30.0
       pathe: 1.1.0
