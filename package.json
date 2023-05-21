@@ -28,23 +28,23 @@
   },
   "dependencies": {
     "consola": "^3.1.0",
-    "jsdom": "^21.1.2",
-    "puppeteer": "^19.11.1",
+    "jsdom": "^22.0.0",
+    "puppeteer": "^20.2.1",
     "puppeteer-cluster": "^0.23.0",
     "subset-font": "^2.1.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
     "@ouuan/eslint-config-ts": "1.2.5",
-    "@ouuan/tsconfig-base": "0.3.0",
+    "@ouuan/tsconfig-base": "1.1.0",
     "@types/jsdom": "21.1.1",
-    "@types/node": "18.16.8",
+    "@types/node": "20.2.1",
     "@types/subset-font": "1.4.0",
     "bumpp": "9.1.0",
     "csstype": "3.1.2",
-    "eslint": "8.40.0",
+    "eslint": "8.41.0",
     "tsup": "6.7.0",
-    "typescript": "4.9.5",
+    "typescript": "5.0.4",
     "vitest": "0.31.1"
   }
 }
