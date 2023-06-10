@@ -1,6 +1,6 @@
 {
   "name": "glyph-segregator",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "A new way to optimize web fonts for a specific site.",
   "repository": "https://github.com/ouuan/glyph-segregator",
   "author": "Yufan You",
