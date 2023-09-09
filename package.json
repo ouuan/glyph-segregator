@@ -29,14 +29,14 @@
   "dependencies": {
     "consola": "^3.2.3",
     "jsdom": "^22.1.0",
-    "puppeteer": "^21.1.0",
+    "puppeteer": "^21.1.1",
     "puppeteer-cluster": "^0.23.0",
     "subset-font": "^2.1.0",
     "zod": "^3.22.2"
   },
   "devDependencies": {
     "@ouuan/eslint-config-ts": "1.2.5",
-    "@ouuan/tsconfig-base": "1.1.0",
+    "@ouuan/tsconfig-base": "1.1.1",
     "@types/jsdom": "21.1.2",
     "@types/node": "20.6.0",
     "@types/subset-font": "1.4.0",
@@ -45,6 +45,6 @@
     "eslint": "8.49.0",
     "tsup": "7.2.0",
     "typescript": "5.2.2",
-    "vitest": "0.34.3"
+    "vitest": "0.34.4"
   }
 }
