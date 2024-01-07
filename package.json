@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@ouuan/eslint-config-ts": "1.2.5",
-    "@ouuan/tsconfig-base": "1.1.1",
+    "@ouuan/tsconfig-base": "1.2.0",
     "@types/jsdom": "21.1.6",
     "@types/node": "20.10.6",
     "@types/subset-font": "1.4.3",
