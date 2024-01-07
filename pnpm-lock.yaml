@@ -29,8 +29,8 @@ devDependencies:
     specifier: 1.2.5
     version: 1.2.5(eslint@8.56.0)(typescript@5.3.3)
   '@ouuan/tsconfig-base':
-    specifier: 1.1.1
-    version: 1.1.1
+    specifier: 1.2.0
+    version: 1.2.0
   '@types/jsdom':
     specifier: 21.1.6
     version: 21.1.6
@@ -432,11 +432,11 @@ packages:
       - supports-color
     dev: true
 
-  /@ouuan/tsconfig-base@1.1.1:
-    resolution: {integrity: sha512-kWSdYffb1IEVeoijKyY1SDkKcRjT0+BsfefNMvO49kDel3Yza+JgA3UjIjEFdNfk8hJlu9R2YGZRlQDB1SIFKQ==}
+  /@ouuan/tsconfig-base@1.2.0:
+    resolution: {integrity: sha512-aYlOAHgYckXADEYLqsfCOtk/JFKFxwLuQuqbbQQGwKst0D51y18Qtg3hIujdRCmFmSvk0y2TQ+JVGq3B6k7tBA==}
     dependencies:
-      '@tsconfig/esm': 1.0.4
-      '@tsconfig/node-lts': 18.12.5
+      '@tsconfig/esm': 1.0.5
+      '@tsconfig/node-lts': 20.1.1
       '@tsconfig/strictest': 2.0.2
     dev: true
 
@@ -560,13 +560,13 @@ packages:
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
     dev: false
 
-  /@tsconfig/esm@1.0.4:
-    resolution: {integrity: sha512-bix9CWljCxyD06nGQRDYdmTw0wevvEDyrLKjbDocGV31JQYbfqqgMV1yFeJ9aDgorKQ9yDLrak8poiggsB5Liw==}
-    deprecated: Use the tsconfig base for your runtime instead of general 'esm', e.g. 'node18'
+  /@tsconfig/esm@1.0.5:
+    resolution: {integrity: sha512-JzoZ0h299JRLPfV5VBsMq1TuMy+OmU9bdV/7NcjfRojL0eIcA1k5ESrtjWrDwJRJnk9B0QmgR0rq04LERbdfWw==}
+    deprecated: this package has been deprecated
     dev: true
 
-  /@tsconfig/node-lts@18.12.5:
-    resolution: {integrity: sha512-KJZX0kQ5FBv77WDVzmQ9y1dUjaJCNXAAz3LSsg5cMwH0AUijVdDQtII+IVprEXdb13U9GjVOBxBzyRvr/ozPxw==}
+  /@tsconfig/node-lts@20.1.1:
+    resolution: {integrity: sha512-V7wHydi1dv8I8xiOX3pJ0lhC+MlOakznvLks94J6y/TqQK6DBcbdD1G4jEq8yU+s6lBASPn4e1Ci636fDqeyvQ==}
     dev: true
 
   /@tsconfig/strictest@2.0.2:
@@ -1086,7 +1086,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /chownr@2.0.0:
@@ -1832,14 +1832,6 @@ packages:
   /fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
-
-  /fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
 
   /fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
