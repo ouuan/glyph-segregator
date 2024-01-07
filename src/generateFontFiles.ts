@@ -36,7 +36,7 @@ async function generateFont(
   if (glyphs.length === 0) {
     return null;
   }
-  const hash = createHash('sha256').update(new Uint16Array(glyphs.sort())).digest('hex');
+  const hash = createHash('sha256').update(baseName).update(new Uint16Array(glyphs.sort())).digest('hex');
   let promise = fontHashMap.get(hash);
   if (!promise) {
     promise = Promise.all((['woff', 'woff2'] as const).map(async (format) => {
