@@ -60,7 +60,6 @@ export default async function getPagesFontInfo(
         '--no-sandbox',
         '--no-zygote',
       ],
-      headless: 'new',
     },
   });
   await cluster.task(async ({ page, data }) => {
