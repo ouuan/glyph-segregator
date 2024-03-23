@@ -15,8 +15,8 @@ dependencies:
     specifier: ^22.6.0
     version: 22.6.0(typescript@5.4.2)
   puppeteer-cluster:
-    specifier: ^0.23.0
-    version: 0.23.0(puppeteer@22.6.0)
+    specifier: ^0.24.0
+    version: 0.24.0(puppeteer@22.6.0)
   subset-font:
     specifier: ^2.1.0
     version: 2.1.0
@@ -2995,10 +2995,10 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  /puppeteer-cluster@0.23.0(puppeteer@22.6.0):
-    resolution: {integrity: sha512-108terIWDzPrQopmoYSPd5yDoy3FGJ2dNnoGMkGYPs6xtkdhgaECwpfZkzaRToMQPZibUOz0/dSSGgPEdXEhkQ==}
+  /puppeteer-cluster@0.24.0(puppeteer@22.6.0):
+    resolution: {integrity: sha512-zHPoNsrwkFLKFtgJJv2aC13EbMASQsE048uZd7CyikEXcl+sc1Nf6PMFb9kMoZI7/zMYxvuP658o2mw079ZZyQ==}
     peerDependencies:
-      puppeteer: '>=1.5.0'
+      puppeteer: '>=22.0.0'
     dependencies:
       debug: 4.3.4
       puppeteer: 22.6.0(typescript@5.4.2)

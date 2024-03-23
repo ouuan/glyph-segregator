@@ -30,7 +30,7 @@
     "consola": "^3.2.3",
     "jsdom": "^24.0.0",
     "puppeteer": "^22.6.0",
-    "puppeteer-cluster": "^0.23.0",
+    "puppeteer-cluster": "^0.24.0",
     "subset-font": "^2.1.0",
     "zod": "^3.22.4"
   },
