@@ -18,8 +18,8 @@ dependencies:
     specifier: ^0.24.0
     version: 0.24.0(puppeteer@22.6.3)
   subset-font:
-    specifier: ^2.1.0
-    version: 2.1.0
+    specifier: ^2.3.0
+    version: 2.3.0
   zod:
     specifier: ^3.22.4
     version: 3.22.4
@@ -2409,8 +2409,8 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
-  /harfbuzzjs@0.3.3:
-    resolution: {integrity: sha512-48C/LOUweD//LTqaQAS9VMOBNPh7DhyJEmdzh5/1GgjNA8kGZMVZKTzkvarBDtiKKaKG5whx7qXU8OeSNLmWcA==}
+  /harfbuzzjs@0.3.5:
+    resolution: {integrity: sha512-SbNxmVAyhlUJTHdaxgK5S6Uqy4mXIu80Vl6KDn8d+ctPAF6W3DY2yehB4BwIC24I/Tk5HGLjaQkyny5gY0r41Q==}
     dev: false
 
   /has-bigints@1.0.2:
@@ -3723,11 +3723,11 @@ packages:
       js-tokens: 8.0.3
     dev: true
 
-  /subset-font@2.1.0:
-    resolution: {integrity: sha512-4xV42NsGGBftUj2bR6cYrUkwtTWZRRg5ISUquTBztWfntyZhod24KI0IH4YBFD3U8luLXFv87uo+1U18kAlVzg==}
+  /subset-font@2.3.0:
+    resolution: {integrity: sha512-RcB2cu/14zYxGceTnnptlc8uTuxMkVYdyu3Kj+CA1nye6bI1s1cSSp+ApzpkMzl8iAmEUt+zAE0VHvhVpTO/Ig==}
     dependencies:
       fontverter: 2.0.0
-      harfbuzzjs: 0.3.3
+      harfbuzzjs: 0.3.5
       lodash: 4.17.21
       p-limit: 3.1.0
     dev: false

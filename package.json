@@ -31,7 +31,7 @@
     "jsdom": "^24.0.0",
     "puppeteer": "^22.6.3",
     "puppeteer-cluster": "^0.24.0",
-    "subset-font": "^2.1.0",
+    "subset-font": "^2.3.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
