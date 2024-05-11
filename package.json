@@ -32,7 +32,7 @@
     "puppeteer": "^22.8.0",
     "puppeteer-cluster": "^0.24.0",
     "subset-font": "^2.3.0",
-    "zod": "^3.23.4"
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@ouuan/eslint-config-ts": "1.2.5",
