@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "consola": "^3.2.3",
-    "jsdom": "^24.1.0",
+    "jsdom": "^24.1.1",
     "puppeteer": "^22.13.0",
     "puppeteer-cluster": "^0.24.0",
     "subset-font": "^2.3.0",
