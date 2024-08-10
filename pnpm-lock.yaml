@@ -37,8 +37,8 @@ importers:
         specifier: 21.1.7
         version: 21.1.7
       '@types/node':
-        specifier: 20.14.12
-        version: 20.14.12
+        specifier: 20.14.15
+        version: 20.14.15
       '@types/subset-font':
         specifier: 1.4.3
         version: 1.4.3
@@ -59,7 +59,7 @@ importers:
         version: 5.5.4
       vitest:
         specifier: 1.6.0
-        version: 1.6.0(@types/node@20.14.12)(jsdom@24.1.1)
+        version: 1.6.0(@types/node@20.14.15)(jsdom@24.1.1)
 
 packages:
 
@@ -642,8 +642,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@20.14.12':
-    resolution: {integrity: sha512-r7wNXakLeSsGT0H1AU863vS2wa5wBOK4bWMjZz2wj+8nBx+m5PeIn0k8AloSLpRuiwdRQZwarZqHE4FNArPuJQ==}
+  '@types/node@20.14.15':
+    resolution: {integrity: sha512-Fz1xDMCF/B00/tYSVMlmK7hVeLh7jE5f3B7X1/hmV0MJBwE27KlS7EvD/Yp+z1lm8mVhwV5w+n8jOZG8AfTlKw==}
 
   '@types/semver@7.5.0':
     resolution: {integrity: sha512-G8hZ6XJiHnuhQKR7ZmysCeJWE08o8T0AXtk5darsCaTVsYZhhgUrq53jizaR2FvsoeCwJhlmwTjkXBY5Pn/ZHw==}
@@ -3132,7 +3132,7 @@ snapshots:
 
   '@types/jsdom@21.1.7':
     dependencies:
-      '@types/node': 20.14.12
+      '@types/node': 20.14.15
       '@types/tough-cookie': 4.0.2
       parse5: 7.1.2
 
@@ -3140,7 +3140,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@20.14.12':
+  '@types/node@20.14.15':
     dependencies:
       undici-types: 5.26.5
 
@@ -3148,13 +3148,13 @@ snapshots:
 
   '@types/subset-font@1.4.3':
     dependencies:
-      '@types/node': 20.14.12
+      '@types/node': 20.14.15
 
   '@types/tough-cookie@4.0.2': {}
 
   '@types/yauzl@2.10.0':
     dependencies:
-      '@types/node': 20.14.12
+      '@types/node': 20.14.15
     optional: true
 
   '@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)':
@@ -5438,13 +5438,13 @@ snapshots:
 
   urlpattern-polyfill@10.0.0: {}
 
-  vite-node@1.6.0(@types/node@20.14.12):
+  vite-node@1.6.0(@types/node@20.14.15):
     dependencies:
       cac: 6.7.14
       debug: 4.3.5
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.2.8(@types/node@20.14.12)
+      vite: 5.2.8(@types/node@20.14.15)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -5455,16 +5455,16 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.2.8(@types/node@20.14.12):
+  vite@5.2.8(@types/node@20.14.15):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.14.0
     optionalDependencies:
-      '@types/node': 20.14.12
+      '@types/node': 20.14.15
       fsevents: 2.3.3
 
-  vitest@1.6.0(@types/node@20.14.12)(jsdom@24.1.1):
+  vitest@1.6.0(@types/node@20.14.15)(jsdom@24.1.1):
     dependencies:
       '@vitest/expect': 1.6.0
       '@vitest/runner': 1.6.0
@@ -5483,11 +5483,11 @@ snapshots:
       strip-literal: 2.0.0
       tinybench: 2.5.1
       tinypool: 0.8.3
-      vite: 5.2.8(@types/node@20.14.12)
-      vite-node: 1.6.0(@types/node@20.14.12)
+      vite: 5.2.8(@types/node@20.14.15)
+      vite-node: 1.6.0(@types/node@20.14.15)
       why-is-node-running: 2.2.2
     optionalDependencies:
-      '@types/node': 20.14.12
+      '@types/node': 20.14.15
       jsdom: 24.1.1
     transitivePeerDependencies:
       - less
