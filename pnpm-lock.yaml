@@ -21,8 +21,8 @@ importers:
         specifier: ^0.24.0
         version: 0.24.0(puppeteer@22.15.0(typescript@5.6.2))
       subset-font:
-        specifier: ^2.3.0
-        version: 2.3.0
+        specifier: ^2.4.0
+        version: 2.4.0
       zod:
         specifier: ^3.23.8
         version: 3.23.8
@@ -1486,8 +1486,8 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  harfbuzzjs@0.3.5:
-    resolution: {integrity: sha512-SbNxmVAyhlUJTHdaxgK5S6Uqy4mXIu80Vl6KDn8d+ctPAF6W3DY2yehB4BwIC24I/Tk5HGLjaQkyny5gY0r41Q==}
+  harfbuzzjs@0.4.0:
+    resolution: {integrity: sha512-unEPrYPSMjTlkTUyZol39REf+nZwYhCaErPDeq08VV2F2UMW2L/xkM7AC4NV92TVNLl4T90JmYMM2RoDoxZRTQ==}
 
   has-bigints@1.0.2:
     resolution: {integrity: sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ==}
@@ -2400,8 +2400,8 @@ packages:
   strip-literal@2.0.0:
     resolution: {integrity: sha512-f9vHgsCWBq2ugHAkGMiiYY+AYG0D/cbloKKg0nhaaaSNsujdGIpVXCNsrJpCKr5M0f4aI31mr13UjY6GAuXCKA==}
 
-  subset-font@2.3.0:
-    resolution: {integrity: sha512-RcB2cu/14zYxGceTnnptlc8uTuxMkVYdyu3Kj+CA1nye6bI1s1cSSp+ApzpkMzl8iAmEUt+zAE0VHvhVpTO/Ig==}
+  subset-font@2.4.0:
+    resolution: {integrity: sha512-DA/45nIj4NiseVdfHxVdVGL7hvNo3Ol6HjEm3KSYtPyDcsr6jh8Q37vSgz+A722wMfUd6nL8kgsi7uGv9DExXQ==}
 
   sucrase@3.35.0:
     resolution: {integrity: sha512-8EbVDiu9iN/nESwxeSxDKe0dunta1GOlHufmSSXxMD2z2/tMZpDMpvXQGsc+ajGo8y2uYUmixaSRUc/QPoQ0GA==}
@@ -4295,7 +4295,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  harfbuzzjs@0.3.5: {}
+  harfbuzzjs@0.4.0: {}
 
   has-bigints@1.0.2: {}
 
@@ -5246,10 +5246,10 @@ snapshots:
     dependencies:
       js-tokens: 8.0.3
 
-  subset-font@2.3.0:
+  subset-font@2.4.0:
     dependencies:
       fontverter: 2.0.0
-      harfbuzzjs: 0.3.5
+      harfbuzzjs: 0.4.0
       lodash: 4.17.21
       p-limit: 3.1.0
 
