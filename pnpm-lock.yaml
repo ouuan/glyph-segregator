@@ -15,11 +15,11 @@ importers:
         specifier: ^25.0.1
         version: 25.0.1
       puppeteer:
-        specifier: ^23.6.0
-        version: 23.6.0(typescript@5.6.3)
+        specifier: ^23.7.1
+        version: 23.7.1(typescript@5.6.3)
       puppeteer-cluster:
         specifier: ^0.24.0
-        version: 0.24.0(puppeteer@23.6.0(typescript@5.6.3))
+        version: 0.24.0(puppeteer@23.7.1(typescript@5.6.3))
       subset-font:
         specifier: ^2.4.0
         version: 2.4.0
@@ -439,8 +439,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@puppeteer/browsers@2.4.0':
-    resolution: {integrity: sha512-x8J1csfIygOwf6D6qUAZ0ASk3z63zPb7wkNeHRerCMh82qWKUrOgkuP005AJC8lDL6/evtXETGEJVcwykKT4/g==}
+  '@puppeteer/browsers@2.4.1':
+    resolution: {integrity: sha512-0kdAbmic3J09I6dT8e9vE2JOCSt13wHCW5x/ly8TSt2bDtuIWe2TgLZZDHdcziw9AVCzflMAXCrVyRIhIs44Ng==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1932,12 +1932,12 @@ packages:
     peerDependencies:
       puppeteer: '>=22.0.0'
 
-  puppeteer-core@23.6.0:
-    resolution: {integrity: sha512-se1bhgUpR9C529SgHGr/eyT92mYyQPAhA2S9pGtGrVG2xob9qE6Pbp7TlqiSPlnnY1lINqhn6/67EwkdzOmKqQ==}
+  puppeteer-core@23.7.1:
+    resolution: {integrity: sha512-Om/qCZhd+HLoAr7GltrRAZpS3uOXwHu7tXAoDbNcJADHjG2zeAlDArgyIPXYGG4QB/EQUHk13Q6RklNxGM73Pg==}
     engines: {node: '>=18'}
 
-  puppeteer@23.6.0:
-    resolution: {integrity: sha512-l+Fgo8SVFSd51STtq2crz8t1Y3VXowsuR4zfR64qDOn6oggz7YIZauWiNR4IJjczQ6nvFs3S4cgng55/nesxTQ==}
+  puppeteer@23.7.1:
+    resolution: {integrity: sha512-jS6XehagMvxQ12etwY/4EOYZ0Sm8GAsrtGhdQn4AqpJAyHc3RYl7tGd4QYh/MmShDw8sF9FWYQqGidhoXaqokQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -2769,7 +2769,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@puppeteer/browsers@2.4.0':
+  '@puppeteer/browsers@2.4.1':
     dependencies:
       debug: 4.3.7
       extract-zip: 2.0.1
@@ -4444,16 +4444,16 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  puppeteer-cluster@0.24.0(puppeteer@23.6.0(typescript@5.6.3)):
+  puppeteer-cluster@0.24.0(puppeteer@23.7.1(typescript@5.6.3)):
     dependencies:
       debug: 4.3.7
-      puppeteer: 23.6.0(typescript@5.6.3)
+      puppeteer: 23.7.1(typescript@5.6.3)
     transitivePeerDependencies:
       - supports-color
 
-  puppeteer-core@23.6.0:
+  puppeteer-core@23.7.1:
     dependencies:
-      '@puppeteer/browsers': 2.4.0
+      '@puppeteer/browsers': 2.4.1
       chromium-bidi: 0.8.0(devtools-protocol@0.0.1354347)
       debug: 4.3.7
       devtools-protocol: 0.0.1354347
@@ -4464,13 +4464,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  puppeteer@23.6.0(typescript@5.6.3):
+  puppeteer@23.7.1(typescript@5.6.3):
     dependencies:
-      '@puppeteer/browsers': 2.4.0
+      '@puppeteer/browsers': 2.4.1
       chromium-bidi: 0.8.0(devtools-protocol@0.0.1354347)
       cosmiconfig: 9.0.0(typescript@5.6.3)
       devtools-protocol: 0.0.1354347
-      puppeteer-core: 23.6.0
+      puppeteer-core: 23.7.1
       typed-query-selector: 2.12.0
     transitivePeerDependencies:
       - bufferutil
