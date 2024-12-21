@@ -40,8 +40,8 @@ importers:
         specifier: 22.10.2
         version: 22.10.2
       '@types/subset-font':
-        specifier: 1.4.3
-        version: 1.4.3
+        specifier: 2.3.0
+        version: 2.3.0
       bumpp:
         specifier: 9.9.1
         version: 9.9.1
@@ -554,8 +554,8 @@ packages:
   '@types/semver@7.5.8':
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
 
-  '@types/subset-font@1.4.3':
-    resolution: {integrity: sha512-DDCrYTYujq/aEEy+DhI54ld/3TOxUnuCc85dULW+xBOxmvJ5wCg/kFpiUoHlieDxh4GKlhIk/4AnDbeu/WVGGg==}
+  '@types/subset-font@2.3.0':
+    resolution: {integrity: sha512-+u2CzLEE7ZReuBP0Mfz0tBydVZvWESmZpBbL7sc+J+qB9ImNp1QmOptMe28uXj2aRPDoQhQF3dubXMgwo56gIg==}
 
   '@types/tough-cookie@4.0.5':
     resolution: {integrity: sha512-/Ad8+nIOV7Rl++6f1BdKxFSMgmoqEoYbHRpPcx3JEfv8VRsQe9Z4mCXeJBzxs7mbHY/XOZZuXlRNfhpVPbs6ZA==}
@@ -2839,7 +2839,7 @@ snapshots:
 
   '@types/semver@7.5.8': {}
 
-  '@types/subset-font@1.4.3':
+  '@types/subset-font@2.3.0':
     dependencies:
       '@types/node': 22.10.2
 
