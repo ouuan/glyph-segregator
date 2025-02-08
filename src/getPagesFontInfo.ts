@@ -51,7 +51,7 @@ export default async function getPagesFontInfo(
 ): Promise<PageInfoWithFontInfo[]> {
   consola.start('Getting font info for pages');
   const cluster: Cluster<PageInfo, PageInfoWithFontInfo> = await Cluster.launch({
-    concurrency: Cluster.CONCURRENCY_PAGE,
+    concurrency: Cluster.CONCURRENCY_CONTEXT,
     maxConcurrency: concurrency,
     monitor: true,
     puppeteerOptions: {
