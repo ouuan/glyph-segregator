@@ -53,7 +53,8 @@ export default function matchFonts(
         const set = glyphSet[fontIndex][variantIndex];
         pageFontVariant.texts.forEach((text) => {
           for (let i = 0; i < text.length; i += 1) {
-            set.add(text.codePointAt(i) as number);
+            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+            set.add(text.codePointAt(i)!);
           }
         });
       }

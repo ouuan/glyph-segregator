@@ -1,13 +1,13 @@
+import { resolve } from 'path';
+import { fileURLToPath } from 'url';
 import {
   beforeAll,
   describe,
   expect,
   it,
 } from 'vitest';
-import { fileURLToPath } from 'url';
-import { resolve } from 'path';
-import type { PageFontInfoItem, PageInfoWithFontInfo } from './types';
 import getPagesFontInfo from './getPagesFontInfo';
+import type { PageFontInfoItem, PageInfoWithFontInfo } from './types';
 
 function generatePageInfo(name: string) {
   return {
@@ -17,7 +17,7 @@ function generatePageInfo(name: string) {
   };
 }
 
-describe('getPagesFontInfo', async () => {
+describe('getPagesFontInfo', () => {
   let pagesWithFonts: PageInfoWithFontInfo[];
 
   beforeAll(async () => {

@@ -13,7 +13,7 @@ function getCommonGlyphsForVariant(
   const map = new Map<number, number>();
   pagesWithGlyphs.forEach((page) => {
     page.glyphInfo[fontIndex][variantIndex].forEach((glyph) => {
-      map.set(glyph, (map.get(glyph) || 0) + page.probability);
+      map.set(glyph, (map.get(glyph) ?? 0) + page.probability);
     });
   });
 

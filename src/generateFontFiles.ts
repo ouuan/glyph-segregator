@@ -1,9 +1,9 @@
 /* eslint-disable no-await-in-loop */
 
-import { consola } from 'consola';
 import { createHash } from 'crypto';
-import { resolve } from 'path';
 import { mkdir, readFile, writeFile } from 'fs/promises';
+import { resolve } from 'path';
+import { consola } from 'consola';
 import subsetFont from 'subset-font';
 import type {
   FontInfoWithCommonGlyphs,
@@ -20,8 +20,12 @@ async function saveAsset(
   baseName: string,
   suffix: string,
 ) {
-  const hash = createHash('sha256').update(buffer).digest('hex').slice(0, 8);
+  const hash = createHash('sha256')
+    .update(buffer)
+    .digest('hex')
+    .slice(0, 8);
   const savePath = `${assetsPath}/${baseName}.${hash}.${suffix}`;
+  // eslint-disable-next-line security/detect-non-literal-fs-filename
   await writeFile(resolve(rootPath, savePath), buffer);
   return savePath;
 }
@@ -36,7 +40,10 @@ async function generateFont(
   if (glyphs.length === 0) {
     return null;
   }
-  const hash = createHash('sha256').update(baseName).update(new Uint16Array(glyphs.sort())).digest('hex');
+  const hash = createHash('sha256')
+    .update(baseName)
+    .update(new Uint16Array(glyphs.sort()))
+    .digest('hex');
   let promise = fontHashMap.get(hash);
   if (!promise) {
     promise = Promise.all((['woff', 'woff2'] as const).map(async (format) => {
@@ -64,12 +71,19 @@ export default async function generateFontFiles(
     css: [],
     preload: [],
   }));
+  // eslint-disable-next-line security/detect-non-literal-fs-filename
   await mkdir(resolve(rootPath, assetsPath), { recursive: true });
   for (const [fontIndex, font] of fontsWithCommonGlyphs.entries()) {
     for (const [variantIndex, variant] of font.variants.entries()) {
-      const elidedFontFamily = font.fontFamily.length > 30 ? `${font.fontFamily.slice(0, 30)}...` : font.fontFamily;
-      consola.start(`Generating font files for '${elidedFontFamily}' (Weight: ${variant.fontWeight})`);
+      const elidedFontFamily = font.fontFamily.length > 30
+        ? `${font.fontFamily.slice(0, 30)}...`
+        : font.fontFamily;
+      consola.start(
+        `Generating font files for '${elidedFontFamily}'`
+        + ` (Weight: ${variant.fontWeight})`,
+      );
 
+      // eslint-disable-next-line security/detect-non-literal-fs-filename
       const originalFont = await readFile(variant.originalFontPath);
 
       const commonFontPath = await generateFont(
@@ -116,7 +130,9 @@ export default async function generateFontFiles(
             unicode-range: U+0-${Math.max(...glyphs).toString(16)};
           }`);
 
-          page.preload.push(`<link rel="preload" href="/${woff2Path}" as="font" type="font/woff2" crossorigin>`);
+          page.preload.push(
+            `<link rel="preload" href="/${woff2Path}" as="font" type="font/woff2" crossorigin>`,
+          );
         }
 
         if (uniqueFontPath) {
@@ -137,7 +153,9 @@ export default async function generateFontFiles(
 
       consola.info(`Common glyph count: ${variant.commonGlyphs.size}`);
       consola.info(`Unique glyph count: ${uniqueGlyphCount}`);
-      consola.success(`Generated font files for '${elidedFontFamily}' (Weight: ${variant.fontWeight})`);
+      consola.success(
+        `Generated font files for '${elidedFontFamily}' (Weight: ${variant.fontWeight})`,
+      );
     }
   }
   return pagesWithCSS;

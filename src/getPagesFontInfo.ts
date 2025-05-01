@@ -1,5 +1,5 @@
-import { Cluster } from 'puppeteer-cluster';
 import { consola } from 'consola';
+import { Cluster } from 'puppeteer-cluster';
 import type { PageFontInfoItem, PageInfo, PageInfoWithFontInfo } from './types';
 
 function toBeEvaluated(): PageFontInfoItem[] {
@@ -50,7 +50,7 @@ export default async function getPagesFontInfo(
   concurrency: number,
 ): Promise<PageInfoWithFontInfo[]> {
   consola.start('Getting font info for pages');
-  const cluster: Cluster<PageInfo, PageInfoWithFontInfo> = await Cluster.launch({
+  const cluster = await Cluster.launch({
     concurrency: Cluster.CONCURRENCY_CONTEXT,
     maxConcurrency: concurrency,
     monitor: true,
@@ -61,14 +61,14 @@ export default async function getPagesFontInfo(
         '--no-zygote',
       ],
     },
-  });
+  }) as Cluster<PageInfo, PageInfoWithFontInfo>;
   await cluster.task(async ({ page, data }) => {
     await page.setRequestInterception(true);
     page.on('request', (request) => {
       if (request.resourceType() === 'image') {
-        request.abort();
+        void request.abort();
       } else {
-        request.continue();
+        void request.continue();
       }
     });
     await page.goto(data.url);

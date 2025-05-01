@@ -50,7 +50,12 @@ describe('matchFonts', () => {
       url: '',
       filePath: '',
       probability: 1,
-      glyphInfo: [[['3'.codePointAt(0)!, '4'.codePointAt(0)!, '5'.codePointAt(0)!]], [['1'.codePointAt(0)!]]],
+      glyphInfo: [
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        [['3'.codePointAt(0)!, '4'.codePointAt(0)!, '5'.codePointAt(0)!]],
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        [['1'.codePointAt(0)!]],
+      ],
     }];
 
     expect(result).toEqual(expected);
@@ -98,7 +103,9 @@ describe('matchFonts', () => {
       probability: 0,
       glyphInfo: [[
         [],
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         ['2'.codePointAt(0)!, '3'.codePointAt(0)!],
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         ['1'.codePointAt(0)!],
       ]],
     }];
@@ -148,7 +155,9 @@ describe('matchFonts', () => {
       probability: 0,
       glyphInfo: [[
         [],
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         ['2'.codePointAt(0)!, '3'.codePointAt(0)!],
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         ['1'.codePointAt(0)!],
       ]],
     }];
@@ -215,7 +224,9 @@ describe('matchFonts', () => {
       filePath: '',
       probability: 0,
       glyphInfo: [
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         [['1'.codePointAt(0)!], ['2'.codePointAt(0)!, '3'.codePointAt(0)!], []],
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         [[], ['4'.codePointAt(0)!]],
       ],
     }];

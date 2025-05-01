@@ -1,5 +1,10 @@
 import { readFile, writeFile } from 'fs/promises';
 import { consola } from 'consola';
+import generateFontFiles from './generateFontFiles';
+import getCommonGlyphs from './getCommonGlyphs';
+import getPagesFontInfo from './getPagesFontInfo';
+import injectCSS from './injectCSS';
+import matchFonts from './matchFonts';
 import { CommonGlyphsCacheSchema } from './types';
 import type {
   CommonGlyphsCache,
@@ -7,17 +12,13 @@ import type {
   PageInfo,
   FontInfo,
 } from './types';
-import getPagesFontInfo from './getPagesFontInfo';
-import matchFonts from './matchFonts';
-import getCommonGlyphs from './getCommonGlyphs';
-import generateFontFiles from './generateFontFiles';
-import injectCSS from './injectCSS';
 
 export async function glyphSegregator(config: Config): Promise<void> {
   consola.start('glyph-segregator started');
 
   let commonGlyphsCache;
   if (config.useCache) {
+    // eslint-disable-next-line security/detect-non-literal-fs-filename
     const cacheContent = await readFile(config.cachePath, 'utf-8');
     commonGlyphsCache = CommonGlyphsCacheSchema.parse(JSON.parse(cacheContent));
     consola.success('Cache loaded');
@@ -43,6 +44,7 @@ export async function glyphSegregator(config: Config): Promise<void> {
       commonGlyphs: Array.from(variant.commonGlyphs).sort((a, b) => a - b),
     })),
   );
+  // eslint-disable-next-line security/detect-non-literal-fs-filename
   await writeFile(config.cachePath, JSON.stringify(newCache, null, 2));
 
   consola.success('Glyphs dividied');
