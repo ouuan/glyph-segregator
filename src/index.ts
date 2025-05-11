@@ -9,8 +9,8 @@ import { CommonGlyphsCacheSchema } from './types';
 import type {
   CommonGlyphsCache,
   Config,
-  PageInfo,
   FontInfo,
+  PageInfo,
 } from './types';
 
 export async function glyphSegregator(config: Config): Promise<void> {
@@ -64,6 +64,6 @@ export async function glyphSegregator(config: Config): Promise<void> {
 
 export type {
   Config,
-  PageInfo,
   FontInfo,
+  PageInfo,
 };
