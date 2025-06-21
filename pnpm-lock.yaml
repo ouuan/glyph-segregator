@@ -24,8 +24,8 @@ importers:
         specifier: ^2.4.0
         version: 2.4.0
       zod:
-        specifier: ^3.25.56
-        version: 3.25.64
+        specifier: ^3.25.67
+        version: 3.25.67
     devDependencies:
       '@ouuan/eslint-config-ts':
         specifier: 2.1.0
@@ -2376,8 +2376,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zod@3.25.64:
-    resolution: {integrity: sha512-hbP9FpSZf7pkS7hRVUrOjhwKJNyampPgtXKc3AN6DsWtoHsg2Sb4SQaS4Tcay380zSwd2VPo9G9180emBACp5g==}
+  zod@3.25.67:
+    resolution: {integrity: sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==}
 
 snapshots:
 
@@ -3101,7 +3101,7 @@ snapshots:
     dependencies:
       devtools-protocol: 0.0.1452169
       mitt: 3.0.1
-      zod: 3.25.64
+      zod: 3.25.67
 
   citty@0.1.6:
     dependencies:
@@ -4932,4 +4932,4 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod@3.25.64: {}
+  zod@3.25.67: {}
