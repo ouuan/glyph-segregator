@@ -15,11 +15,11 @@ importers:
         specifier: ^26.1.0
         version: 26.1.0
       puppeteer:
-        specifier: ^24.10.2
-        version: 24.11.2(typescript@5.8.3)
+        specifier: ^24.12.1
+        version: 24.12.1(typescript@5.8.3)
       puppeteer-cluster:
         specifier: ^0.24.0
-        version: 0.24.0(puppeteer@24.11.2(typescript@5.8.3))
+        version: 0.24.0(puppeteer@24.12.1(typescript@5.8.3))
       subset-font:
         specifier: ^2.4.0
         version: 2.4.0
@@ -1779,12 +1779,12 @@ packages:
     peerDependencies:
       puppeteer: '>=22.0.0'
 
-  puppeteer-core@24.11.2:
-    resolution: {integrity: sha512-c49WifNb8hix+gQH17TldmD6TC/Md2HBaTJLHexIUq4sZvo2pyHY/Pp25qFQjibksBu/SJRYUY7JsoaepNbiRA==}
+  puppeteer-core@24.12.1:
+    resolution: {integrity: sha512-8odp6d3ERKBa3BAVaYWXn95UxQv3sxvP1reD+xZamaX6ed8nCykhwlOiHSaHR9t/MtmIB+rJmNencI6Zy4Gxvg==}
     engines: {node: '>=18'}
 
-  puppeteer@24.11.2:
-    resolution: {integrity: sha512-HopdRZWHa5zk0HSwd8hU+GlahQ3fmesTAqMIDHVY9HasCvppcYuHYXyjml0nlm+nbwVCqAQWV+dSmiNCrZGTGQ==}
+  puppeteer@24.12.1:
+    resolution: {integrity: sha512-+vvwl+Xo4z5uXLLHG+XW8uXnUXQ62oY6KU6bEFZJvHWLutbmv5dw9A/jcMQ0fqpQdLydHmK0Uy7/9Ilj8ufwSQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -4192,14 +4192,14 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  puppeteer-cluster@0.24.0(puppeteer@24.11.2(typescript@5.8.3)):
+  puppeteer-cluster@0.24.0(puppeteer@24.12.1(typescript@5.8.3)):
     dependencies:
       debug: 4.4.1
-      puppeteer: 24.11.2(typescript@5.8.3)
+      puppeteer: 24.12.1(typescript@5.8.3)
     transitivePeerDependencies:
       - supports-color
 
-  puppeteer-core@24.11.2:
+  puppeteer-core@24.12.1:
     dependencies:
       '@puppeteer/browsers': 2.10.5
       chromium-bidi: 5.1.0(devtools-protocol@0.0.1464554)
@@ -4213,13 +4213,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  puppeteer@24.11.2(typescript@5.8.3):
+  puppeteer@24.12.1(typescript@5.8.3):
     dependencies:
       '@puppeteer/browsers': 2.10.5
       chromium-bidi: 5.1.0(devtools-protocol@0.0.1464554)
       cosmiconfig: 9.0.0(typescript@5.8.3)
       devtools-protocol: 0.0.1464554
-      puppeteer-core: 24.11.2
+      puppeteer-core: 24.12.1
       typed-query-selector: 2.12.0
     transitivePeerDependencies:
       - bare-buffer
