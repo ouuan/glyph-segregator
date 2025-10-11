@@ -29,7 +29,7 @@
   "dependencies": {
     "consola": "^3.4.2",
     "jsdom": "^26.1.0",
-    "puppeteer": "^24.22.3",
+    "puppeteer": "^24.24.0",
     "puppeteer-cluster": "^0.24.0",
     "subset-font": "^2.4.0",
     "zod": "^3.25.76"
