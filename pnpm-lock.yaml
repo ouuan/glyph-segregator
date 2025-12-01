@@ -28,8 +28,8 @@ importers:
         version: 3.25.76
     devDependencies:
       '@ouuan/eslint-config-ts':
-        specifier: 2.1.0
-        version: 2.1.0(@typescript-eslint/parser@8.48.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
+        specifier: 2.1.1
+        version: 2.1.1(@typescript-eslint/parser@8.48.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       '@ouuan/tsconfig-base':
         specifier: 1.3.4
         version: 1.3.4
@@ -481,8 +481,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@ouuan/eslint-config-ts@2.1.0':
-    resolution: {integrity: sha512-2HPz2uilO9y3iBuLQtakmaY4zTFwE01T+y3skaoQAi6Zz+U3/rjMMJjOTBzk4B/hMnLCUA/uKqpyjZie9L7nbQ==}
+  '@ouuan/eslint-config-ts@2.1.1':
+    resolution: {integrity: sha512-5UObhCS598AHJ+mvt68SllB1FnrtlWzN5KU4LjS9Ahn0Xa/PlAdUvDIUgIMCSsSmGi+DmY5W02JS2H/Bw7ChxA==}
     peerDependencies:
       eslint: '>=9'
       typescript: '>=5'
@@ -2684,7 +2684,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@ouuan/eslint-config-ts@2.1.0(@typescript-eslint/parser@8.48.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)':
+  '@ouuan/eslint-config-ts@2.1.1(@typescript-eslint/parser@8.48.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
       '@eslint/js': 9.39.1
       '@stylistic/eslint-plugin': 4.4.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
