@@ -31,8 +31,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1(@typescript-eslint/parser@8.48.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       '@ouuan/tsconfig-base':
-        specifier: 1.3.4
-        version: 1.3.4
+        specifier: 1.3.5
+        version: 1.3.5
       '@types/jsdom':
         specifier: 21.1.7
         version: 21.1.7
@@ -487,8 +487,8 @@ packages:
       eslint: '>=9'
       typescript: '>=5'
 
-  '@ouuan/tsconfig-base@1.3.4':
-    resolution: {integrity: sha512-ixFbiDyy/P9Qu5QJtCCjnGK8/W1+BieBE3dib6GJBWwxMQg9K5TEXRgeH0v+/oL117Hi9kpNfEG+HdRCzTFrZg==}
+  '@ouuan/tsconfig-base@1.3.5':
+    resolution: {integrity: sha512-iPQrG6xLaa+ysPOE0hs0WN2E2vOqsTtBvBEf+LOcX5mFZ7lS823EtV2udx/2pfTXEKy0n6jO5f4LSi7NzJJubA==}
 
   '@puppeteer/browsers@2.10.13':
     resolution: {integrity: sha512-a9Ruw3j3qlnB5a/zHRTkruppynxqaeE4H9WNj5eYGRWqw0ZauZ23f4W2ARf3hghF5doozyD+CRtt7XSYuYRI/Q==}
@@ -2701,7 +2701,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  '@ouuan/tsconfig-base@1.3.4':
+  '@ouuan/tsconfig-base@1.3.5':
     dependencies:
       '@tsconfig/node-lts': 22.0.4
       '@tsconfig/strictest': 2.0.8
