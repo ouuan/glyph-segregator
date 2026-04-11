@@ -21,7 +21,7 @@ importers:
         specifier: ^0.25.0
         version: 0.25.0(puppeteer@24.40.0(typescript@5.9.3))
       subset-font:
-        specifier: ^2.4.0
+        specifier: ^2.5.0
         version: 2.5.0
       zod:
         specifier: ^4.3.6
