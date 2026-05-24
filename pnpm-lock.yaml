@@ -15,7 +15,7 @@ importers:
         specifier: ^29.1.1
         version: 29.1.1
       puppeteer:
-        specifier: ^24.42.0
+        specifier: ^24.43.1
         version: 24.43.1(typescript@5.9.3)
       puppeteer-cluster:
         specifier: ^0.25.0
