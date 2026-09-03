@@ -40,7 +40,7 @@
     "@types/jsdom": "28.0.3",
     "@types/node": "24.13.3",
     "@types/subset-font": "2.3.0",
-    "bumpp": "11.0.1",
+    "bumpp": "11.1.0",
     "csstype": "3.2.3",
     "eslint": "9.39.4",
     "tsup": "8.5.1",

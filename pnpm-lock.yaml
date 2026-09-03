@@ -43,8 +43,8 @@ importers:
         specifier: 2.3.0
         version: 2.3.0
       bumpp:
-        specifier: 11.0.1
-        version: 11.0.1
+        specifier: 11.1.0
+        version: 11.1.0
       csstype:
         specifier: 3.2.3
         version: 3.2.3
@@ -922,8 +922,8 @@ packages:
   buffer-crc32@0.2.13:
     resolution: {integrity: sha512-VO9Ht/+p3SN7SKWqcrgEzjGbRSJYTx+Q1pTQC0wrWqHx0vpJraQ6GtHx8tvcg1rlK1byhU5gccxgOgj7B0TDkQ==}
 
-  bumpp@11.0.1:
-    resolution: {integrity: sha512-X0ti27I/ewsx/u0EJSyl0IZWWOE95q+wIpAG/60kc5gqMNR4a23YJdd3lL7JsBN11TgLbCM4KpfGMuFfdigb4g==}
+  bumpp@11.1.0:
+    resolution: {integrity: sha512-jdwOGMyX8JIqpQ0N2RMRR87DHZaoJnUtui5lU9LqFfFK5JC0H8qY9uWqXoa+dEWt/K7rOmmsoyiZB8RBM7RPBQ==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -3255,7 +3255,7 @@ snapshots:
 
   buffer-crc32@0.2.13: {}
 
-  bumpp@11.0.1:
+  bumpp@11.1.0:
     dependencies:
       args-tokenizer: 0.3.0
       cac: 7.0.0
