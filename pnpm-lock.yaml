@@ -24,7 +24,7 @@ importers:
         specifier: ^2.7.0
         version: 2.7.0
       zod:
-        specifier: ^4.4.3
+        specifier: ^4.6.5
         version: 4.6.5
     devDependencies:
       '@ouuan/eslint-config-ts':
