@@ -41,7 +41,7 @@
     "@types/node": "24.19.2",
     "@types/subset-font": "2.3.0",
     "bumpp": "11.1.0",
-    "csstype": "3.2.3",
+    "csstype": "3.2.4",
     "eslint": "9.39.5",
     "tsup": "8.5.1",
     "typescript": "5.9.3",
